@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			/*브라우저마다 px크기와 margin의 크기가 다르기 때문에 *을 0px로 준다.*/
+			*{
+				magin : 0px;
+				padding: 0px;
+			}
+			#header{
+				border: 1px solid black;
+				hegith: 100px;
+				margin-bottom:10px;
+			}
+			#content1 {
+				border: 1px solid red;
+				padding-top:10px;
+				padding-right: 50px;
+				padding-left: 50px;
+				padding-bottom:10px;
+				hegiht:100px;
+				box-sizing:border-box;
+			}
+			#content1 .innerDiv {
+				background-color: green;
+				height: 100px;
+			}
+			#content2{
+				border: 1px solid purple;
+				margin: 50px;
+			}
+			#content2 .innerDiv{
+				/*margin: 50px 10px 50px 10px;*/
+				/*top right buttom left*/
+				
+				/*두개 일때는 top,bottom:50px right,left:10px*/
+				/*margin: 50px 10px;*/
+				
+				/*outo:양쪽에 공간을 똑같이 가져간다.*/
+				margin:50px outo;
+				background-color:orange;
+			}
+			#footer{
+				border: 1px solid blue;
+				width:500px;
+				height:500px;
+			}
+			
+			#footer .innerDiv{
+				background-color: #ff00ff; 
+				width:50%;
+				height:50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header"><p>this is header</p></div>
+		
+		<div id="content1">
+			<div class="innerDiv">this is content1</div>
+		</div>
+		
+		<div id="content2">
+			<div class="innerDiv">this is content2</div>
+		</div>
+		
+		<div id="footer">
+			<div class="innerDiv">this is footer</div>
+		</div>
+		
+	</body>
+</html>
