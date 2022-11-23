@@ -11,8 +11,12 @@
 			function fun1(){
 				//내용을 얻는 방법
 				//var pContent =${"#div>p"}.text();
+				//Get
 				var pContent =$("#div1>p").html(); //이걸 더 많이씀
 				console.log(pContent);
+				
+				//값을 변경(Set)
+				$("#idv>p").html("이것이 문장입니다.");
 				
 				//입력 양식의 값을 얻는 방법
 				//나는 아이디에 대한 값을 얻고 싶어
